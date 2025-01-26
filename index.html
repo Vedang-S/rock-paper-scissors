@@ -3,10 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
     <title>Rock Paper Scissors!</title>
 </head>
+
 <body>
-    
+    <div class="header">
+        <img src="./images/rocks.png" alt="a drawing of rocks" id="rocks">
+        <p>~ Rock, Paper, Scissors ~</p>
+        <img src="./images/rocks.png" alt="a drawing of scissors" id="rocks" style="transform:scaleX(-1);">
+    </div>
+
+    <div class="modal">
+        <div class="winner-popup">
+            <p id="winner-announcement"></p>
+            <p id="score-announcement"></p>
+            <button id="popup-button">Okay!</button>
+        </div>
+    </div>
+
+    <div class="user-choice-container"> 
+        <div class="instructions">
+            <p><em><strong>Make your move!</strong></em></p>
+            <p>First to 5 points wins!</p>
+        </div>
+        
+        <div class="the-choices">
+            <p id="user-made">You chose </p>
+            <p id="computer-made">Computer chose </p>
+        </div>
+
+        <p id="outcome">Make a choice!</p>
+        
+        <div class="scores">
+            <p>Your score: <span id="user-score"></span></p>
+            <p>Computer score: <span id="computer-score"></span></p>
+        </div>
+
+        <div class="user-choice">
+            <button id="rock">Rock</button>
+            <button id="paper">Paper</button>
+            <button id="scissors">Scissors</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2025 Vedang-S </p>
+    </div>
 </body>
 </html>

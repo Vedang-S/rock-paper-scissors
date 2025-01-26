@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Gamja+Flower&display=swap');
+
+body {
+    display:flex;
+    flex-direction:column;
+    height:100vh;
+    margin:0;
+    padding:0;
+    font-family: "Space Grotesk", serif;
+    background-color: #171219;
+}
+
+/* HEADER STYLING */
+.header {
+    display:flex;
+    flex-wrap:nowrap;
+    gap:20px;
+    padding:24px 24px 15px 24px;
+    margin:0px;
+    align-items: center;
+    justify-content:center;
+    background-color: rgb(127, 145, 131);
+    border-top-right-radius:15%;
+    border-top-left-radius: 15%;
+}
+.header p {
+    flex-shrink:0;
+    font-family: "Fuzzy Bubbles",serif;
+    font-size:40px;
+    color:#E5E7EB;
+    margin:10px 0px 5px 0px;
+    font-weight:bold;
+}
+.header #rocks {
+    width:125px;
+    height:88px;
+}
+.header #scissors {
+    width:88px;
+    height:88px;
+}
+/* END HEADER STYLING */
+
+/* USER CHOICE STYLING */
+.user-choice-container {
+    display:flex;
+    flex-direction:column;
+    height:650px;
+    justify-content:flex-start;
+    align-items:center;
+    font-size:30px;
+    background-color:#B9D8C2;
+    flex-shrink:0;
+    flex-wrap:nowrap;
+    border-bottom-right-radius:10%;
+    border-bottom-left-radius: 10%;
+}
+.instructions {
+    padding:10px;
+    margin-top:30px;
+    border-bottom: 1px solid #171219;
+    border-radius: 5%;
+}
+.instructions p {
+    margin: 10px;
+    text-align:center;
+}
+.user-choice {
+    display:flex;
+    gap:50px;
+    margin-top:0px;
+}
+.user-choice button{
+    height:100px;
+    width:150px;
+    padding:10px;
+    font-size:35px;
+    font-family:"Delicious Handrawn",serif;
+    color:white;
+    font-weight:bold;
+    background-color:#586F6B;
+    transition: transform 0.3s ease;
+    box-shadow:#394846;
+}
+.user-choice button:hover {
+    background-color:#394846;
+    transform:scale(1.2);
+}
+.the-choices {
+    display:flex;
+    gap:400px;
+    font-weight:bold;
+    margin-top:10px;
+}
+.scores {
+    display:flex;
+    gap:600px;
+    margin-top:30px;
+}
+/* END USER CHOICE STYLING */
+
+/* WINNER POPUP STYLING */
+.modal {
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index:-1;
+    transition:all 0.2s ease-in-out;
+    opacity:0;
+}
+.winner-popup {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    gap:5px;
+    padding:50px;
+    height:200px;
+    width:300px;
+    background-color:#1d171f;
+    color:white;
+    border-radius:12px;
+}
+.modal.open {
+    z-index:999;
+    opacity:1;
+}
+.winner-popup p {
+    margin:0;
+    font-size:30px;
+    font-weight:bold;
+    font-family:"Delicious Handrawn",serif;
+}
+#popup-button {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:20px;
+    height:50px;
+    width:120px;
+    padding:10px;
+    font-size:24px;
+    font-family:"Delicious Handrawn",serif;
+    color:white;
+    font-weight:bold;
+    border-radius:12px;
+    background-color:#586F6B;
+    transition: transform 0.3s ease;
+}
+#popup-button:hover {
+    background-color:#394846;
+    transform:scale(1.2);
+}
+/* FOOTER STYLING */
+.footer {
+    background-color:#171219;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:20px;
+    color:white;
+}
