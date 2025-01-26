@@ -73,6 +73,8 @@ body {
     margin-top:0px;
 }
 .user-choice button{
+    border:none;
+    border-radius:12px;
     height:100px;
     width:150px;
     padding:10px;
@@ -139,6 +141,8 @@ body {
     font-family:"Delicious Handrawn",serif;
 }
 #popup-button {
+    border:none;
+    border-radius:12px;
     display:flex;
     justify-content: center;
     align-items: center;
